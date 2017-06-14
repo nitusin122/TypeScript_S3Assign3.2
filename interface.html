@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Constructor Assignment</title>
+    <script type="text/javascript" src="interface.js"></script>
+</head>
+<body>
+    <div id="resultDiv"></div>
+    <script type="text/javascript">
+        var myNewCar = new Car();
+
+        //Calling Methods
+        document.getElementById('resultDiv').innerHTML = myNewCar.start() + "<br/>";
+        document.getElementById('resultDiv').innerHTML += myNewCar.drive() + "<br/>";
+        document.getElementById('resultDiv').innerHTML += myNewCar.getPosition();
+    </script>
+</body>
+</html>
